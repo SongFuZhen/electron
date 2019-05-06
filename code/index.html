@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Portal!</title>
+    <link rel="stylesheet" href="statics/css/global.css" />
+    <link rel="stylesheet" href="statics/css/main.css" />
+  </head>
+  <body>
+    <div class="header" style="-webkit-app-region: drag">
+      <div class="menu" style="-webkit-app-region: no-drag">
+        <img src="./statics/images/toolbar/config.svg" />
+        <img src="./statics/images/toolbar/minu.svg" onclick="handleMin()" />
+        <img src="./statics/images/toolbar/close.svg" onclick="handleClose()" />
+      </div>
+
+      <div class="title">
+        <h1>
+          Hey Aaron !
+        </h1>
+
+        <div class="tab">
+          <ul>
+            <li>App</li>
+            <li>Shortcut</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="message">
+        <div class="left">
+          <h3>Untreated</h3>
+          <span class="unread">3</span>
+        </div>
+
+        <div class="right">
+          <button>View all</button>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list-item">
+          <div class="item-header">
+            <!-- <img alt="logo" src="public/portal_icon.png" /> -->
+            <div></div>
+            <p>APQP / Approval / Leave</p>
+            <span>10min</span>
+          </div>
+
+          <div class="item-desc">
+            Master Wang of the Ministry of Engineering sent a request for
+            approval of workflow
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="item-header">
+            <!-- <img alt="logo" src="public/portal_icon.png" /> -->
+            <div></div>
+            <p>APS / Adjust accounts</p>
+            <span>21min</span>
+          </div>
+
+          <div class="item-desc">
+            Miss Zhang of the Finance Department asks you to help with the bill
+            of materials
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const ipc = require("electron").ipcRenderer;
+
+      function handleMin() {
+        ipc.send("window-min");
+      }
+
+      function handleClose() {
+        ipc.send("window-close");
+        // ipc.send("put-in-tray");
+        // ipc.send("window-min");
+      }
+    </script>
+  </body>
+</html>
