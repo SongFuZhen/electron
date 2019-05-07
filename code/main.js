@@ -1,7 +1,7 @@
 // https://www.w3cschool.cn/electronmanual/electronmanual-browser-window.html
 
 const electron = require("electron");
-const { app, BrowserWindow } = electron;
+const { app, BrowserWindow, shell } = electron;
 const ipc = electron.ipcMain;
 
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
@@ -20,6 +20,7 @@ function createWindow() {
         frame: false,
         show: false,
         resizable: false,
+        maximizable: false,
         // alwaysOnTop: true,
         type: "desktop",
         // titleBarStyle: "hidden",
@@ -79,6 +80,13 @@ ipc.on("window-min", function(e) {
 // 关闭
 ipc.on("window-close", function() {
     app.quit();
+});
+
+// 最小化
+ipc.on("open-extral", function(e, arg) {
+    e.preventDefault();
+
+    shell.openExternal("http://47.96.97.244:16100" + arg);
 });
 
 // 菜单
