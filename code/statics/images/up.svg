@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="8px" viewBox="0 0 19 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>分组</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0002 -4.4408921e-16 18.565 -4.4408921e-16 18.565 7.3699751 0.0002 7.3699751"></polygon>
+    </defs>
+    <g id="personai-center" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shortcut1" transform="translate(-191.000000, -475.000000)">
+            <g id="分组" transform="translate(200.500000, 479.000000) scale(1, -1) translate(-200.500000, -479.000000) translate(191.000000, 475.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M18.5652,1.2471 C18.5652,1.5801 18.4352,1.8931 18.1992,2.1281 L10.1652,7.0051 C9.6782,7.4921 8.8872,7.4911 8.4012,7.0051 L0.3652,2.1281 C0.1292,1.8931 0.0002,1.5801 0.0002,1.2471 C0.0002,0.9141 0.1292,0.6011 0.3652,0.3651 C0.8512,-0.1209 1.6432,-0.1209 2.1292,0.3651 L9.2832,4.3601 L16.4352,0.3651 C16.7502,0.0511 17.2112,-0.0729 17.6402,0.0421 C18.0692,0.1571 18.4072,0.4951 18.5222,0.9241 C18.5502,1.0291 18.5652,1.1381 18.5652,1.2471" id="Fill-1" fill="#666666" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -8,9 +8,9 @@
   "scripts": {
     "start": "electron .",
     "build:all": "electron-packager . --all --overwrite",
-    "build:mac": "electron-packager ./ Portal --asar --platform=darwin --arch=x64 --out=./dist_mac --app-version=1.0.0",
-    "build:win64": "electron-packager ./ Portal --platform=win32 --arch=x64 --out=./dist_win64 --app-version=1.0.0",
-    "build:win32": "electron-packager ./ 'Portal' --platform=win32 --arch=ia32 --out=./dist_win32  --app-version=1.0.0",
+    "build:mac": "electron-packager ./ Portal --asar --platform=darwin --arch=x64 --overwrite --out=./dist_mac --app-version=1.0.0",
+    "build:win64": "electron-packager ./ Portal --platform=win32 --arch=x64 --out=./dist_win64 --overwrite --app-version=1.0.0",
+    "build:win32": "electron-packager ./ 'Portal' --platform=win32 --arch=ia32 --out=./dist_win32 --overwrite --app-version=1.0.0",
     "package": "asar pack dist-x64/resources/app dist-x64/resources/app.asar && rm -rf dist-x64/resources/app"
   },
   "devDependencies": {
